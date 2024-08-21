@@ -7,54 +7,94 @@
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow">
-        <nav class="container mx-auto p-4">
-            <ul class="flex space-x-4">
-                <li><a href="index.html" class="text-blue-600 hover:text-blue-800">Home</a></li>
-            </ul>
-        </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gray-900 text-white">
+        <div class="container mx-auto text-center py-16">
+            <img src="group-image.jpg" alt="Group Image" class="mx-auto rounded-full w-48 h-48 object-cover mb-6">
+            <h1 class="text-4xl font-bold mb-4">Meet Our Team</h1>
+            <p class="text-lg">A passionate group of learners ready to make an impact.</p>
+        </div>
     </header>
 
-    <main class="container mx-auto my-10 p-4">
-        <section>
-            <h1 class="text-4xl font-bold mb-6 text-center">Meet Our Team</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h2 class="text-2xl font-bold mb-2">Johannes Tjøstheim</h2>
-                    <p class="text-gray-700">Bio of Student 1. What they're studying and their role in the group.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h2 class="text-2xl font-bold mb-2">Jonas Hovdenak</h2>
-                    <p class="text-gray-700">Bio of Student 2. What they're studying and their role in the group.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h2 class="text-2xl font-bold mb-2">Martin Steiro</h2>
-                    <p class="text-gray-700">Bio of Student 3. What they're studying and their role in the group.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h2 class="text-2xl font-bold mb-2">Ruben Teikari</h2>
-                    <p class="text-gray-700">Bio of Student 4. What they're studying and their role in the group.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h2 class="text-2xl font-bold mb-2">Sander Javier</h2>
-                    <p class="text-gray-700">Bio of Student 5. What they're studying and their role in the group.</p>
-                </div>
+    <!-- Team Section -->
+    <section class="container mx-auto my-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Team Members</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Member 1 -->
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <img src="member1.jpg" alt="Member 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">Jonas Fritzøe Hovdenak</h3>
+                <p class="text-gray-700">Role: Developer</p>
             </div>
-        </section>
+            <!-- Member 2 -->
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <img src="member2.jpg" alt="Member 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">Sander Javier Nomedal</h3>
+                <p class="text-gray-700">Role: Designer</p>
+            </div>
+            <!-- Member 3 -->
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <img src="member3.jpg" alt="Member 3" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">Martin Steiro</h3>
+                <p class="text-gray-700">Role: Project Manager</p>
+            </div>
+            <!-- Member 4 -->
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <img src="member4.jpg" alt="Member 4" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">Ruben Sigma Teikari</h3>
+                <p class="text-gray-700">Role: QA Engineer</p>
+            </div>
+            <!-- Member 5 -->
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <img src="member5.jpg" alt="Member 5" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-2xl font-bold mb-2">Johannes Tjøstheim</h3>
+                <p class="text-gray-700">Role: Analyst</p>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h1 class="text-4xl font-bold mb-6 text-center">Om gruppen</h1>
-
-
-
-        </section>
-
-
-    </main>
+    <!-- About Us Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Us</h2>
+            
+            <!-- Biography -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-4">Biography</h3>
+                <p class="text-gray-700">We are a group of five students, each specializing in different areas of technology and design. Our goal is to create impactful solutions to real-world problems while continuing to learn and grow as professionals.</p>
+            </div>
+            
+            <!-- Competence -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-4">Competence</h3>
+                <p class="text-gray-700">Our team possesses a diverse set of skills, including software development, design, project management, quality assurance, and data analysis. We pride ourselves on being adaptable and quick learners in ever-evolving tech environments.</p>
+            </div>
+            
+            <!-- Group Dynamics -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-4">How We Work as a Group</h3>
+                <p class="text-gray-700">We believe in collaboration and open communication. We work together using agile methodologies, ensuring that each member’s voice is heard, and ideas are considered in our decision-making process.</p>
+            </div>
+            
+            <!-- Project/Company Preferences -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-4">What We Look for in a Project or Company</h3>
+                <p class="text-gray-700">We seek projects and companies that challenge us to think creatively and push our limits. We value organizations that prioritize innovation, collaboration, and continuous improvement.</p>
+            </div>
+            
+            <!-- Ambitions -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Our Ambitions</h3>
+                <p class="text-gray-700">Our ultimate ambition is to become leaders in our respective fields. We aim to work on cutting-edge projects, contribute to meaningful innovations, and constantly evolve in the fast-paced tech world.</p>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-white shadow mt-10 p-4 text-center">
-        <p>&copy; 2024 Student Group. All rights reserved.</p>
+        <p>Denne nettsiden er utviklet av gruppen for emnet IS-310 og IS-304, 2024.</p>
     </footer>
 </body>
 </html>
