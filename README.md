@@ -1,2 +1,2 @@
-# Bachelor-Project
-Main repository for our groups bachelor project
+# Bachelor-Nettside
+Main repository for our groups bachelor website
