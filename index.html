@@ -6,9 +6,96 @@
     <title>About Us</title>
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 text-gray-900">
+
+<div>
+
+    <style>
+        @media only screen and (min-width: 768px){
+            .parent:hover .child {
+                opacity: 1;
+                height: auto;
+                overflow: visible;
+                transform: translateY(0);
+            }
+            .child {
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+                transform: translateY(-10%);
+            }
+        }
+
+        /* Apply fixed position to the nav element */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50; /* Ensure it stays on top of other content */
+        }
+    </style>
+
+    <nav class="flex px-4 border-b md:shadow-lg items-center bg-white">
+        <div class="text-lg font-bold md:py-0 py-4">
+            Logo
+        </div>
+        <ul class="md:px-2 ml-auto md:flex md:space-x-2">
+            <li>
+                <a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+                    <span>Hjem</span>
+                </a>
+            </li>
+            <li class="relative parent">
+                <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
+                    <span>Om Oss</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                        <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+                    </svg>
+                </a>
+                <ul class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b">
+                    <li>
+                        <a href="#Jonas" class="flex px-4 py-3 hover:bg-gray-50">
+                            Jonas Fritzøe Hovdenak
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Sander" class="flex px-4 py-3 hover:bg-gray-50">
+                            Sander Javier Nomedal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Martin" class="flex px-4 py-3 hover:bg-gray-50">
+                            Martin Steiro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Ruben" class="flex px-4 py-3 hover:bg-gray-50">
+                            Ruben Teikari
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Johannes" class="flex px-4 py-3 hover:bg-gray-50">
+                            Johannes Tjøstheim
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Om_Gruppen" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
+                    <span>Om Gruppen</span>
+                </a>
+            </li>
+        </ul>
+        <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
+            </svg>
+        </div>
+    </nav>
+</div>
 
     <!-- Hero Section -->
     <header class="bg-gray-900 text-white">
@@ -27,7 +114,7 @@
     <div class="space-y-12">
        
         <!-- Member 1 -->
-<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto">
+<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto" id="Jonas">
     <img src="images/jonas.jpg" alt="Jonas Fritzøe Hovdenak" class="w-64 h-64 rounded-lg object-cover mr-8">
     <div class="text-left flex-1">
         <h3 class="text-3xl font-bold mb-2">Jonas Fritzøe Hovdenak</h3>
@@ -50,7 +137,7 @@
 </div>
 
         <!-- Member 2 -->
-<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto">
+<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto" id="Sander">
     <img src="images/sander.jpg" alt="Sander Javier Nomedal" class="w-64 h-64 rounded-lg object-cover mr-8">
     <div class="text-left flex-1">
         <h3 class="text-3xl font-bold mb-2">Sander Javier Nomedal</h3>
@@ -73,7 +160,7 @@
 </div>
 
         <!-- Member 3 -->
-<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto">
+<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto" id="Martin">
     <img src="images/martin.jpg" alt="Martin Steiro" class="w-64 h-64 rounded-lg object-cover mr-8">
     <div class="text-left flex-1">
         <h3 class="text-3xl font-bold mb-2">Martin Steiro</h3>
@@ -96,7 +183,7 @@
 </div>
 
          <!-- Member 4 -->
-<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto">
+<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto" id="Ruben">
     <img src="images/ruben.jpg" alt="Ruben Teikari" class="w-64 h-64 rounded-lg object-cover mr-8">
     <div class="text-left flex-1">
         <h3 class="text-3xl font-bold mb-2">Ruben Teikari</h3>
@@ -119,7 +206,7 @@
 </div>
 
         <!-- Member 5 -->
-<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto">
+<div class="bg-white p-8 rounded-lg shadow flex items-start justify-center w-full md:w-4/5 mx-auto" id="Johannes">
     <img src="images/johannes.jpg" alt="Johannes Tjøstheim" class="w-64 h-64 rounded-lg object-cover mr-8">
     <div class="text-left flex-1">
         <h3 class="text-3xl font-bold mb-2">Johannes Tjøstheim</h3>
@@ -142,7 +229,7 @@
 </div>
 
     <!-- About Us Section -->
-    <section class="bg-white py-16">
+    <section class="bg-white py-16" id="Om_Gruppen">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">Om oss</h2>
             
