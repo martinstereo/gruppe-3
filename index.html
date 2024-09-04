@@ -37,22 +37,24 @@
             }
         </style>
 
-        <nav class="flex px-4 border-b md:shadow-lg items-center bg-gray-900">
-            <div class="text-lg font-bold md:py-0 py-4">
-                <!--UiA Logo-->
-                <a href="index.html"> <img src="images/uia_logo.png" alt="UiA logo" class="h-8 md:h-10"></a>
-            </div>
-            <ul class="md:px-2 ml-auto md:flex md:space-x-2">
-                <li><a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-500"><span>Hjem</span></a></li>
-                <li class="relative parent"><a href="#team-medlemmer" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-500 space-x-2"><span>Team-medlemmene</span></a></li>
-                <li><a href="#Om_Oss" class="flex md:inline-flex p-4 items-center hover:bg-gray-500"><span>Om Oss</span></a></li>
-            </ul>
-            <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                    <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
-                </svg>
-            </div>
-        </nav>
+<nav class="navbar flex px-4 border-b md:shadow-lg items-center bg-gray-900 fixed w-full top-0 transition-transform duration-300">
+    <div class="text-lg font-bold md:py-0 py-4">
+      <a href="index.html">
+        <img src="images/uia_logo.png" alt="UiA logo" class="h-8 md:h-10">
+      </a>
+    </div>
+    <ul class="md:px-2 ml-auto md:flex md:space-x-2">
+      <li><a href="#" class="flex md:inline-flex p-4 items-center hover:bg-gray-500"><span>Hjem</span></a></li>
+      <li class="relative parent"><a href="#team-medlemmer" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-500 space-x-2"><span>Team-medlemmene</span></a></li>
+      <li><a href="#Om_Oss" class="flex md:inline-flex p-4 items-center hover:bg-gray-500"><span>Om Oss</span></a></li>
+    </ul>
+    <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+        <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+      </svg>
+    </div>
+  </nav>
+  
     </div>
 
 
@@ -235,6 +237,7 @@
             <p><a href="https://github.com/IS-304-Bachelor/Bachelor-Nettside">Github Repository.</a></p>
         </footer>
     </section>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>
