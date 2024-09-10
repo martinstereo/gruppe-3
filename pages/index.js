@@ -36,8 +36,8 @@ export default function Home() {
             <h1 className='text-center text-5xl font-medium'>Velkommen, oppdragsgiver!</h1>
           </div>
         </section>
-
-        <section>
+        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+        <section className='font-inter'>
           <div>
             {/*Tittel*/}
             <h1 className='text-center text-4xl p-10'>Møt Teamet</h1>
@@ -61,11 +61,13 @@ export default function Home() {
                     </a>
                   </div>
                   {/*tekst*/}
-                  <p>Jeg har erfaring innen arbeid med digitalisering, bruk av ulike teknologier som programmering, databaser og Docker. Gjennom systemutvikling i team med bruk av Scrum, har både utviklet mine samarbeidsferdigheter og tekniske ferdigheter. Videre har jeg praksis UiA IT, hvor jeg skal konteinerisere UiA tjenesten MeSH (Medical Subject Headings). Målet er å skape et mer isolert og uavhengig miljø for å kjøre applikasjonen på en effektiv måte uavhengig av underliggende infrastruktur. På fritiden liker jeg å være aktiv; jeg driver med klatring, trening og tilbringer tid med venner.</p>
+                  <p className='text-md py-2 leading-7'>Jeg har erfaring innen arbeid med digitalisering, bruk av ulike teknologier som programmering, databaser og Docker. Gjennom systemutvikling i team med bruk av Scrum, har både utviklet mine samarbeidsferdigheter og tekniske ferdigheter. Videre har jeg praksis UiA IT, hvor jeg skal konteinerisere UiA tjenesten MeSH (Medical Subject Headings). Målet er å skape et mer isolert og uavhengig miljø for å kjøre applikasjonen på en effektiv måte uavhengig av underliggende infrastruktur. På fritiden liker jeg å være aktiv; jeg driver med klatring, trening og tilbringer tid med venner.</p>
                 </div>
+                
+                
             </div>
-
-
+            
+              
 
           </div>
         </section>
