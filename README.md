@@ -1,1 +1,2 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Gruppe 3
+lenke til nettside: https://gruppe-3.vercel.app/
