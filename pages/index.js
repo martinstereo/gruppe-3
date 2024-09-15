@@ -31,17 +31,17 @@ export default function Home() {
 
 
 return (
-  <div className='bg-white dark:bg-slate-950'>
+  <div className='bg-white dark:bg-slate-950 overflow-hidden'>
     <Head>
       <title>Bachelorgruppe 3</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" type="image/png" />
     </Head>
     
 
     {/* Navbar */}
     <nav className="bg-white dark:bg-slate-950 shadow-md">
           <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex justify-between items-center h-16 px-6">
+              <div className="flex justify-between items-center h-16 px-4">
                   {/* Logo Section */}
                   <div className="flex-shrink-0">
                       <span className="text-xl font-bold text-gray-800 dark:text-white">
@@ -51,9 +51,11 @@ return (
 
                   {/* Menu Items */}
                   <div className="flex space-x-8">
+                    {/*
                       <a href="#" className="pt-1 text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-400">
                           Teamet
                       </a>
+                    */}
                       <a href="#" className="pt-1 text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-400">
                           Om Oss
                       </a>
@@ -65,7 +67,7 @@ return (
                               !dark && <IoMoon /> // render moon when dark is false
                           }
                       </button>
-                      <div className='text-3xl pr-4 flex justify-center lg:justify-start text-gray-700 dark:text-gray-400'>
+                      <div className='text-3xl flex justify-center lg:justify-start text-gray-700 dark:text-gray-400'>
                         <a href="https://github.com/IS-304-Bachelor" target='_blank' rel='noopener noreferrer' className='hover:text-gray-900 dark:hover:text-gray-200 transition-colors'>
                           <AiFillGithub/>
                         </a>
@@ -81,7 +83,7 @@ return (
       <section className='bg-white dark:bg-slate-950 my-4'>
         <div className='p-6'>
           {/* Title */}
-          <h1 className='text-6xl font-sans mb-6 text-gray-800 dark:text-white'>
+          <h1 className='text-4xl font-sans mb-6 text-gray-800 dark:text-white'>
             Velkommen, oppdragsgiver!
           </h1>
   
@@ -91,9 +93,11 @@ return (
           </div>
 
           {/* Text Section */}
-          <div className='mt-6 max-w-3xl mx-auto'>
+          <div className='max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 mt-5'>
             {/* Small Header */}
-            <h2 className='text-gray-800 dark:text-white text-2xl font-semibold font-inter mb-2'>Dette er oss i Gruppe 3</h2>
+            <h2 className='text-gray-800 dark:text-white text-2xl font-semibold font-inter mb-2'>
+              Dette er oss i Gruppe 3
+            </h2>
 
             {/* Descriptive Text */}
             <p className='text-gray-800 dark:text-white text-lg leading-7'>
