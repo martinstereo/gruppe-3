@@ -40,8 +40,8 @@ return (
 
     {/* Navbar */}
     <nav className="bg-white dark:bg-slate-950 shadow-md">
-          <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex justify-between items-center h-16 px-4">
+          <div className="max-w-screen-lg mx-auto px-2 lg:px-8">
+              <div className="flex justify-between items-center h-16">
                   {/* Logo Section */}
                   <div className="flex-shrink-0">
                       <span className="text-xl font-bold text-gray-800 dark:text-white">
@@ -56,10 +56,10 @@ return (
                           Teamet
                       </a>
                     */}
-                      <a href="#" className="pt-1 text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-400">
+                      <a href="#" className="pt-1 text-gray-800 dark:text-white hover:text-black font-bold dark:hover:text-gray-400">
                           Om Oss
                       </a>
-                      <button className='text-2xl hover:text-gray-900 text-gray-800 dark:text-white hover:bg-gray-300 px-1 rounded-full transition duration-300 ease-in-out' onClick={()=> darkModeHandler()}>
+                      <button className='text-2xl hover:text-black dark:hover:text-gray-900 text-gray-700 dark:text-white px-1 rounded-full transition duration-300 ease-in-out' onClick={()=> darkModeHandler()}>
                           {
                               dark && <IoSunny /> // render sunny when dark is true
                           }
@@ -78,14 +78,17 @@ return (
           </div>
       </nav>
 
-    <main className='bg-white dark:bg-slate-950 max-w-screen-lg mx-auto px-4 lg:px-8'>
+    <main className='bg-white dark:bg-slate-950 max-w-screen-lg mx-auto px-2 lg:px-8'>
       
       <section className='bg-white dark:bg-slate-950 my-4'>
-        <div className='p-6'>
+        <div>
           {/* Title */}
-          <h1 className='text-4xl font-sans mb-6 text-gray-800 dark:text-white'>
-            Velkommen, oppdragsgiver!
-          </h1>
+          <div className='pt-6 lg:pl-6'>
+            <h1 className='text-4xl font-sans mb-6 text-gray-800 dark:text-white'>
+              Velkommen, oppdragsgiver!
+            </h1>
+          </div>
+
   
           {/* Image Container (Centered) */}
           <div className='flex justify-center'>
@@ -93,7 +96,7 @@ return (
           </div>
 
           {/* Text Section */}
-          <div className='max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 mt-5'>
+          <div className='max-w-screen-lg mx-auto lg:px-8 mt-5'>
             {/* Small Header */}
             <h2 className='text-gray-800 dark:text-white text-2xl font-semibold font-inter mb-2'>
               Dette er oss i Gruppe 3
@@ -117,7 +120,7 @@ return (
           {/*Gruppemedlemmer*/}
           <div>
             {/*Gruppemedlem 1*/}
-            <div className='bg-white dark:bg-slate-950 lg:pt-0 px-6 py-4 rounded text-gray-800 dark:text-white'>
+            <div className='bg-white dark:bg-slate-950 rounded text-gray-800 dark:text-white'>
               <div className='flex flex-col lg:flex-row lg:items-center'>
                 {/* Left Side: Image, Name, Logos */}
                 <div className='flex flex-col items-center lg:items-center lg:px-6 lg:pt-4 lg:w-1/3'>
@@ -133,11 +136,11 @@ return (
                     />
                   </div>
                   {/* Name */}
-                  <h2 className='text-center lg:text-left text-2xl px-14 whitespace-nowrap'>
+                  <h2 className='text-center lg:text-left text-2xl whitespace-nowrap'>
                     Johannes Tjøstheim
                   </h2>
                   {/* Role */}
-                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base px-14 py-2 whitespace-nowrap'>
+                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
                     Fullstack-utvikler / Prosjektleder
                   </h3>
                   {/* Logos */}
@@ -169,7 +172,7 @@ return (
             {/*strek*/}
             <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
             {/*Gruppemedlem 2*/}
-            <div className='bg-white dark:bg-slate-950 lg:pt-0 px-6 py-4 rounded text-gray-800 dark:text-white'>
+            <div className='bg-white dark:bg-slate-950 rounded text-gray-800 dark:text-white'>
               <div className='flex flex-col lg:flex-row lg:items-center'>
                 {/* Left Side: Image, Name, Logos */}
                 <div className='flex flex-col items-center lg:items-center lg:px-6 lg:pt-4 lg:w-1/3'>
@@ -185,11 +188,11 @@ return (
                     />
                   </div>
                   {/* Name */}
-                  <h2 className='text-center lg:text-left text-2xl px-14 whitespace-nowrap'>
+                  <h2 className='text-center lg:text-left text-2xl whitespace-nowrap'>
                     Jonas Fritzøe Hovdenak
                   </h2>
                   {/* Role */}
-                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base px-14 py-2 whitespace-nowrap'>
+                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
                     Frontend-utvikler
                   </h3>
                   {/* Logos */}
@@ -221,7 +224,7 @@ return (
             {/*strek*/}
             <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
             {/*Gruppemedlem 3*/}
-            <div className='bg-white dark:bg-slate-950 lg:pt-0 px-6 py-4 rounded text-gray-800 dark:text-white'>
+            <div className='bg-white dark:bg-slate-950 rounded text-gray-800 dark:text-white'>
               <div className='flex flex-col lg:flex-row lg:items-center'>
                 {/* Left Side: Image, Name, Logos */}
                 <div className='flex flex-col items-center lg:items-center lg:px-6 lg:pt-4 lg:w-1/3'>
@@ -237,11 +240,11 @@ return (
                     />
                   </div>
                   {/* Name */}
-                  <h2 className='text-center lg:text-left text-2xl px-14 whitespace-nowrap'>
+                  <h2 className='text-center lg:text-left text-2xl whitespace-nowrap'>
                     Sander Javier Nomedal
                   </h2>
                   {/* Role */}
-                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base px-14 py-2 whitespace-nowrap'>
+                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
                     Fullstack-utvikler
                   </h3>
                   {/* Logos */}
@@ -273,7 +276,7 @@ return (
             {/*strek*/}
             <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
             {/*Gruppemedlem 4*/}
-            <div className='bg-white dark:bg-slate-950 lg:pt-0 px-6 py-4 rounded text-gray-800 dark:text-white'>
+            <div className='bg-white dark:bg-slate-950 rounded text-gray-800 dark:text-white'>
               <div className='flex flex-col lg:flex-row lg:items-center'>
                 {/* Left Side: Image, Name, Logos */}
                 <div className='flex flex-col items-center lg:items-center lg:px-6 lg:pt-4 lg:w-1/3'>
@@ -289,11 +292,11 @@ return (
                     />
                   </div>
                   {/* Name */}
-                  <h2 className='text-center lg:text-left text-2xl px-14 whitespace-nowrap'>
+                  <h2 className='text-center lg:text-left text-2xl whitespace-nowrap'>
                     Martin Steiro
                   </h2>
                   {/* Role */}
-                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base px-14 py-2 whitespace-nowrap'>
+                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
                     Fullstack-utvikler
                   </h3>
                   {/* Logos */}
@@ -329,7 +332,7 @@ return (
             {/*strek*/}
             <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
             {/*Gruppemedlem 5*/}
-            <div className='bg-white dark:bg-slate-950 lg:pt-0 px-6 py-4 rounded text-gray-800 dark:text-white'>
+            <div className='bg-white dark:bg-slate-950 rounded text-gray-800 dark:text-white'>
               <div className='flex flex-col lg:flex-row lg:items-center'>
                 {/* Left Side: Image, Name, Logos */}
                 <div className='flex flex-col items-center lg:items-center lg:px-6 lg:pt-4 lg:w-1/3'>
@@ -345,11 +348,11 @@ return (
                     />
                   </div>
                   {/* Name */}
-                  <h2 className='text-center lg:text-left text-2xl px-14 whitespace-nowrap'>
+                  <h2 className='text-center lg:text-left text-2xl whitespace-nowrap'>
                     Ruben Teikari
                   </h2>
                   {/* Role */}
-                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base px-14 py-2 whitespace-nowrap'>
+                  <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
                     Fullstack-utvikler
                   </h3>
                   {/* Logos */}
