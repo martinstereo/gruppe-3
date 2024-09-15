@@ -304,15 +304,19 @@ return (
                 </div>
                 {/* Right Side: Text */}
                 <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4'>
-                  <p className='text-md leading-7 font-'>
-                    <strong>Jonas</strong> har erfaring innen arbeid med digitalisering, bruk av ulike teknologier som programmering, databaser og Docker. Gjennom systemutvikling i team med bruk av Scrum, har både utviklet mine samarbeidsferdigheter og tekniske ferdigheter. Videre har jeg praksis UiA IT, hvor jeg skal konteinerisere UiA tjenesten MeSH (Medical Subject Headings). Målet er å skape et mer isolert og uavhengig miljø for å kjøre applikasjonen på en effektiv måte uavhengig av underliggende infrastruktur. På fritiden liker jeg å være aktiv; jeg driver med klatring, trening og tilbringer tid med venner.
+                  <p className='text-md leading-7'>
+                    <strong>Martin</strong> engasjerer seg svært for utvikling og den menneskelige kontakten i møte med teknologi. Gjennom studiet har Martin fått en interesse for utvikling gjennom de ulike teknologiene han satt seg inn i. Martin synes koding er gøy og når han setter seg inn i noe vil han jobbe hardt for å finne en løsning. Han har arbeidet med og interesserer seg for mye forskjellig både på frontend og backend, og er samtidig alltid klar til å sette seg inn i noe nytt.
                   </p>
-                  <p className='font-semibold py-2'>
+                  <p className='text-md leading-7 pt-3'>
+                    Martin er for tiden i en praksisperiode hos Kartverket hvor han arbeider i KartAi-prosjektet med RAG arkitektur og generativ KI.
+                  </p>
+                  <p className='font-bold pt-3'>
                     Interesseområder:
                   </p>
                   <ul className='pl-5 list-disc'>
-                    <li className='py-1'>Frontend-utvikling:</li>
-                    <li className='py-1'>Backend-utvikling:</li>
+                    <li className='py-1'>Frontend-utvikling: React, Tailwind, JS, TS</li>
+                    <li className='py-1'>Backend-utvikling: C#, Python og annet</li>
+                    <li className='py-1'>Annet: Databasehåndtering, generativ KI</li>
                   </ul>
                 
                 </div>
