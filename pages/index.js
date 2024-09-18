@@ -1,82 +1,21 @@
 import Head from 'next/head';
-import React, { useEffect, useState } from "react";
 import 'tailwindcss/tailwind.css';
 import {AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 import Image from 'next/image';
 import Footer from '../components/Footer';
-import { IoMoon } from "react-icons/io5";
-import { IoSunny } from "react-icons/io5";
+import Navbar from '../components/Navbar';
 
 
 export default function Home() {
-  const [dark, setDark] = React.useState(false);
-
-  // Dark mode toggle function
-  const darkModeHandler = () => {
-    setDark(!dark);
-    if (!dark) {
-      document.documentElement.classList.add("dark"); // Add 'dark' class to <html>
-    } else {
-      document.documentElement.classList.remove("dark"); // Remove 'dark' class from <html>
-    }
-  };
-
-  useEffect(() => {
-    const storedDarkMode = localStorage.getItem("darkMode");
-    if (storedDarkMode === "true") {
-      document.documentElement.classList.add("dark");
-      setDark(true);
-    }
-  }, []);
-
-
 return (
   <div className='bg-white dark:bg-slate-950 overflow-hidden'>
     <Head>
       <title>Bachelorgruppe 3</title>
       <link rel="icon" href="/favicon.png" type="image/png" />
     </Head>
-    
 
     {/* Navbar */}
-    <nav className="bg-white dark:bg-slate-950 shadow-md">
-          <div className="max-w-screen-lg mx-auto px-2 lg:px-8">
-              <div className="flex justify-between items-center h-16 max-w-screen-lg mx-auto px-2 lg:px-8">
-                  {/* Logo Section */}
-                  <div className="flex-shrink-0">
-                      <span className="text-xl font-bold text-gray-800 dark:text-white">
-                        Gruppe 3
-                      </span>
-                  </div>
-
-                  {/* Menu Items */}
-                  <div className="flex space-x-6 items-center">
-                    {/*
-                      <a href="#" className="pt-1 text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-400">
-                          Teamet
-                      </a>
-                    */}
-                      <a href="#" className="pt-1 text-gray-800 dark:text-white hover:text-black font-bold dark:hover:text-gray-400">
-                          Møt Teamet
-                      </a>
-                      <button className='text-2xl hover:text-black dark:hover:text-gray-600 text-gray-700 dark:text-white px-1 rounded-full transition duration-300 ease-in-out' onClick={()=> darkModeHandler()}>
-                          {
-                              dark && <IoSunny /> // render sunny when dark is true
-                          }
-                          {
-                              !dark && <IoMoon /> // render moon when dark is false
-                          }
-                      </button>
-                      <div className='text-3xl flex justify-center lg:justify-start text-gray-700 dark:text-gray-400'>
-                        <a href="https://github.com/IS-304-Bachelor" target='_blank' rel='noopener noreferrer' className='hover:text-gray-900 dark:hover:text-gray-200 transition-colors'>
-                          <AiFillGithub/>
-                        </a>
-                      </div>
-                      
-                  </div>
-              </div>
-          </div>
-      </nav>
+    <Navbar></Navbar>
 
     <main className='bg-white dark:bg-slate-950 max-w-screen-lg mx-auto px-2 lg:px-8'>
       
@@ -103,8 +42,10 @@ return (
             </h2>
 
             {/* Descriptive Text */}
-            <p className='text-gray-800 dark:text-white text-lg leading-7'>
-              Dette er en introduksjonstekst som beskriver prosjektet og ønsker velkommen til oppdragsgiveren.
+            <p className='text-gray-800 dark:text-white leading-8'>
+              Alle gruppemedlemmene har høye forventninger til hverandres gjennomføring av oppgavene og utfordringene vi står ovenfor. Samt har gruppen høy tillit til hverandres ferdigheter, kunnskap og arbeidsmoral. Videre har det vært et stort fokus på å danne en gruppe som er komfortable med sine egne ferdigheter, og som med disse ferdighetene kan bidra der det trengs. 
+              <br></br> <br></br>
+              Gruppen er dannet på et grunnlag av tillit og respekt, hvor mye tid og energi er lagt inn i samarbeidet  – gjennom team-building exercises. Åpen dialog er viktig i vårt samarbeid, vi ønsker et miljø der ideer og tanker kan deles fritt. Totalt sett oppnår gruppen vår gode resultater som en følge av at vi har arbeidserfaring sammen og at vi fokuserer på kommunikasjon, respekt og god planlegging.
             </p>
           </div>
         </div>
@@ -114,7 +55,7 @@ return (
       <section>
         <div>
           {/*Tittel*/}
-          <h1 className='text-gray-800 dark:text-white text-center text-4xl font-extralight py-6'>
+          <h1 id='teamet' className='text-gray-800 dark:text-white text-center text-4xl font-extralight py-6'>
             Møt Teamet
           </h1>
           {/*strek*/}
@@ -156,8 +97,8 @@ return (
                   </div>
                 </div>
                 {/* Right Side: Text */}
-                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4'>
-                  <p className='text-md leading-7 font-'>
+                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4 text-md leading-8'>
+                  <p>
                     <strong>Johannes Tjøstheim</strong> er en energisk og nysgjerrig person med sterk interesse for programvareutvikling og cybersikkerhet. Gjennom sin erfaring som IT-support i Dyreparken har han utviklet gode evner til å være løsningsorientert, spesielt i krevende og tidssensitive situasjoner. Gjennom sin praksis hos Capgemini får han videre utviklet sin kompetanse innen programvareutvikling. Videre er han også leder for Kristiansand Studentklatring – med over 250 medlemmer – der både leder- og samarbeidsevnene hans blir styrket. Samlet har disse erfaringene forsterket hans lidenskap for IT-bransjen, og han er motivert og klar for nye, spennende og utfordrende oppgaver.
                   </p>
                   <p className='font-semibold py-2'>
@@ -208,8 +149,8 @@ return (
                   </div>
                 </div>
                 {/* Right Side: Text */}
-                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4'>
-                  <p className='text-md leading-7'>
+                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4 text-md leading-8'>
+                  <p>
                     <strong>Jonas Fritzøe Hovdenak</strong> har gjennom studiene bygd både erfaring og interesse innen arbeid med digitalisering og bruk av ulike teknologier. Han har gjennom systemutvikling i team med bruk av Scrum, har utviklet sine samarbeidsferdigheter og tekniske ferdigheter. Videre har Jonas praksis UiA IT, hvor han skal konteinerisere UiA tjenesten MeSH (Medical Subject Headings). Målet er å skape et mer isolert og uavhengig miljø for å kjøre applikasjonen på en effektiv måte uavhengig av underliggende infrastruktur. På fritiden er Jonas aktiv, der han blant annet driver med klatring, trening, og tilbringer tid med venner.
                   </p>
                   <p className='font-semibold py-2'>
@@ -260,8 +201,8 @@ return (
                   </div>
                 </div>
                 {/* Right Side: Text */}
-                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4'>
-                  <p className='text-md leading-7 font-'>
+                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4 text-md leading-8'>
+                  <p>
                     <strong>Sander Javier Nomedal</strong> er en engasjert IT-student med stor interesse for teknologi, backend-utvikling og tjenestedesign, og har gjennom studiene opparbeidet seg bred kompetanse innen disse områdene. For tiden er Sander i praksis hos DigIn i Kristiansand, der han jobber med GeoAI:HUB prosjektet. Målet er å samle initiativer, ekspertise og teknologi på tvers av fagområdene geomatikk og kunstig intelligens (AI), samt fremme utveksling av kompetanse og erfaring på tvers av sektorer og bransjer.
                   </p>
                   <p className='font-semibold py-2'>
@@ -312,11 +253,11 @@ return (
                   </div>
                 </div>
                 {/* Right Side: Text */}
-                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4'>
-                  <p className='text-md leading-7'>
-                    <strong>Martin Steiro</strong> engasjerer seg svært for utvikling og den menneskelige kontakten i møte med teknologi. Gjennom studiet har Martin fått en interesse for utvikling gjennom de ulike teknologiene han satt seg inn i. Martin synes koding er gøy og når han setter seg inn i noe vil han jobbe hardt for å finne en løsning. Han har arbeidet med og interesserer seg for mye forskjellig både på frontend og backend, og er samtidig alltid klar til å sette seg inn i noe nytt.
-                  </p>
-                  <p className='text-md leading-7 pt-3'>
+                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4 text-md leading-8'>
+                  <p>
+                    <strong>Martin Steiro</strong> engasjerer seg svært for utvikling og den menneskelige kontakten i møte med teknologi. Gjennom studiet har Martin fått en interesse for utvikling gjennom de ulike teknologiene han satt seg inn i. Martin har utviket en spesielt stor interesse for koding, og setter han seg ned med et problem, jobber han intensivt med det til en løsning er funnet. Han er interessert i mye innenfor både frontend og backend, og er alltid klar for å lære noe nytt.
+                    </p>
+                  <p className='pt-3'>
                     Martin er for tiden i en praksisperiode hos Kartverket hvor han arbeider i KartAi-prosjektet med RAG-arkitektur og generativ KI.
                   </p>
                   <p className='font-bold pt-3'>
@@ -368,8 +309,8 @@ return (
                   </div>
                 </div>
                 {/* Right Side: Text */}
-                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4'>
-                  <p className='text-md leading-7'>
+                <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4 text-md leading-8'>
+                  <p>
                     <strong>Ruben Teikari</strong> er en teamorientert og engasjert person som trives med å løse utfordringer og bidra til utviklingen av produkter og tjenester som skaper verdi for andre. Han har en god forståelse for viktigheten av å beherske ulike teknologier og deres praktiske anvendelser. Denne høsten er Ruben i praksis hos Kristiansand kommune, der han jobber på KartAI-prosjektet. Han bidrar der med å utvikle AI-baserte deteksjoner og håndtering av geojson-fildata. På fritiden liker han å være fysisk aktiv, blant annet klatring og kroppsvekt styrketrening. Ved siden av studiet og fritid er Ruben også styremedlem i NITO studentene.
                   </p>
                   <p className='font-semibold py-2'>
