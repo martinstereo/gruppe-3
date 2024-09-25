@@ -189,7 +189,7 @@ return (
                   </h2>
                   {/* Role */}
                   <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
-                    Fullstack-utvikler
+                    Backend-utvikler
                   </h3>
                   {/* Logos */}
                   <div className='text-5xl flex justify-center lg:justify-start gap-3 text-gray-700 dark:text-gray-400 my-4'>
