@@ -44,7 +44,8 @@ return (
             {/* Descriptive Text */}
             <p className='text-gray-800 dark:text-white leading-8'>
               Alle gruppemedlemmene har høye forventninger til hverandres gjennomføring av oppgavene og utfordringene vi står ovenfor. Samt har gruppen høy tillit til hverandres ferdigheter, kunnskap og arbeidsmoral. Videre har det vært et stort fokus på å danne en gruppe som er komfortable med sine egne ferdigheter, og som med disse ferdighetene kan bidra der det trengs. 
-              <br></br> <br></br>
+            </p>
+            <p className='text-gray-800 dark:text-white leading-8 pt-4'>
               Gruppen er dannet på et grunnlag av tillit og respekt, hvor mye tid og energi er lagt inn i samarbeidet  – gjennom team-building exercises. Åpen dialog er viktig i vårt samarbeid, vi ønsker et miljø der ideer og tanker kan deles fritt. Totalt sett oppnår gruppen vår gode resultater som en følge av at vi har arbeidserfaring sammen og at vi fokuserer på kommunikasjon, respekt og god planlegging.
             </p>
           </div>
