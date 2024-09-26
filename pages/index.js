@@ -23,9 +23,10 @@ return (
         <div className='pb-6'>
           {/* Title */}
           <div className='pt-6 lg:px-8'>
-            <h1 className='text-4xl font-sans mb-6 text-gray-800 dark:text-white'>
+            <h1 className='text-gray-800 dark:text-white text-left text-4xl font-semibold pt-3'>
               Velkommen, oppdragsgiver!
             </h1>
+            <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
           </div>
 
   
@@ -37,16 +38,16 @@ return (
           {/* Text Section */}
           <div className='max-w-screen-lg mx-auto lg:px-8 mt-5'>
             {/* Small Header */}
-            <h2 className='text-gray-800 dark:text-white text-2xl font-semibold font-inter mb-2'>
+            <h2 className='text-gray-800 dark:text-white text-2xl font-inter mb-2 py-2'>
               Dette er oss i Gruppe 3
             </h2>
 
             {/* Descriptive Text */}
             <p className='text-gray-800 dark:text-white leading-8'>
-              Alle gruppemedlemmene har høye forventninger til hverandres gjennomføring av oppgavene og utfordringene vi står ovenfor. Samt har gruppen høy tillit til hverandres ferdigheter, kunnskap og arbeidsmoral. Videre har det vært et stort fokus på å danne en gruppe som er komfortable med sine egne ferdigheter, og som med disse ferdighetene kan bidra der det trengs. 
+              <strong>Gruppe 3</strong> er et team på fem dedikerte IT-studenter med en gjennomtenkt gruppesammensetning. Teamet består av to frontend-utviklere (Jonas og Martin), to backend-utviklere (Ruben og Sander), og en fullstack-utvikler (Johannes) som også er prosjektleder.
             </p>
             <p className='text-gray-800 dark:text-white leading-8 pt-4'>
-              Gruppen er dannet på et grunnlag av tillit og respekt, hvor mye tid og energi er lagt inn i samarbeidet  – gjennom team-building exercises. Åpen dialog er viktig i vårt samarbeid, vi ønsker et miljø der ideer og tanker kan deles fritt. Totalt sett oppnår gruppen vår gode resultater som en følge av at vi har arbeidserfaring sammen og at vi fokuserer på kommunikasjon, respekt og god planlegging.
+              <strong>Sammen</strong> har vi lyst til å skape samfunnsnyttige løsninger av kvalitet med fokus på god prosjektgjennomføring, kommunikasjon og godt samarbeid med <strong>dere.</strong>
             </p>
           </div>
         </div>
@@ -106,8 +107,9 @@ return (
                     Interesseområder:
                   </p>
                   <ul className='pl-5 list-disc'>
-                    <li className='py-1'>Frontend-utvikling:</li>
-                    <li className='py-1'>Backend-utvikling:</li>
+                    <li className='py-1'>Frontend-utvikling: React, Tailwind</li>
+                    <li className='py-1'>Backend-utvikling: C#, Python</li>
+                    <li className='py-1'>Annet: KI, Cybersikkerhet, Linux, Docker og Kubernetes, API, Ledelse</li>
                   </ul>
                 
                 </div>
@@ -160,6 +162,7 @@ return (
                   <ul className='pl-5 list-disc'>
                     <li className='py-1'>Frontend-utvikling:</li>
                     <li className='py-1'>Backend-utvikling:</li>
+                    <li className='py-1'>Annet: Generativ KI, docker, databasehåntering</li>
                   </ul>
                 
                 </div>
@@ -241,7 +244,7 @@ return (
                   </h2>
                   {/* Role */}
                   <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
-                    Fullstack-utvikler
+                    Frontend-utvikler
                   </h3>
                   {/* Logos */}
                   <div className='text-5xl flex justify-center lg:justify-start gap-3 text-gray-700 dark:text-gray-400 my-4'>
@@ -256,7 +259,7 @@ return (
                 {/* Right Side: Text */}
                 <div className='lg:flex-grow mt-4 lg:mt-0 lg:px-4 text-md leading-8'>
                   <p>
-                    <strong>Martin Steiro</strong> engasjerer seg svært for utvikling og den menneskelige kontakten i møte med teknologi. Gjennom studiet har Martin fått en interesse for utvikling gjennom de ulike teknologiene han satt seg inn i. Martin har utviket en spesielt stor interesse for koding, og setter han seg ned med et problem, jobber han intensivt med det til en løsning er funnet. Han er interessert i mye innenfor både frontend og backend, og er alltid klar for å lære noe nytt.
+                    <strong>Martin Steiro</strong> engasjerer seg svært for utvikling og den menneskelige kontakten i møte med teknologi. Gjennom studiet har Martin fått en interesse for utvikling gjennom de ulike teknologiene han satt seg inn i. Martin har utviklet en spesielt stor interesse for koding, og setter han seg ned med et problem, jobber han intensivt med det til en løsning er funnet. Han er interessert i mye innenfor både frontend og backend, og er alltid klar for å lære noe nytt.
                     </p>
                   <p className='pt-3'>
                     Martin er for tiden i en praksisperiode hos Kartverket hvor han arbeider i KartAi-prosjektet med RAG-arkitektur og generativ KI.
@@ -266,7 +269,7 @@ return (
                   </p>
                   <ul className='pl-5 list-disc'>
                     <li className='py-1'>Frontend-utvikling: React, Tailwind, JS, TS</li>
-                    <li className='py-1'>Backend-utvikling: C#, Golang, Python og annet</li>
+                    <li className='py-1'>Backend-utvikling: C#, Golang, Python, m.m. </li>
                     <li className='py-1'>Annet: Databasehåndtering, generativ KI</li>
                   </ul>
                 
@@ -297,7 +300,7 @@ return (
                   </h2>
                   {/* Role */}
                   <h3 className='text-slate-600 dark:text-slate-300 text-center lg:text-left text-base py-2 whitespace-nowrap'>
-                    Fullstack-utvikler
+                    Backend-utvikler
                   </h3>
                   {/* Logos */}
                   <div className='text-5xl flex justify-center lg:justify-start gap-3 text-gray-700 dark:text-gray-400 my-4'>
@@ -329,6 +332,101 @@ return (
           
 
         </div>
+      </section>
+
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <section>
+        <div>
+          {/*Tittel*/}
+          <h1 id='ProskjektArbeid' className='text-gray-800 dark:text-white text-center text-4xl font-extralight py-6'>
+            Hvordan vi jobber med prosjekter
+          </h1>
+          {/*strek*/}
+          <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
+          <div>
+            {/* Descriptive Text */}
+            <div>
+              <h2 id='Arbeidsoppgaver' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Arbeidsoppgaver og backlogg
+              </h2>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                Gruppen er svært tilpasslig av DevOps verktøy i prosjektet for å sikre ideel overgang ved produktets leveranse. Ved valgfritt DevOps verktøy har gruppen mest kompetanse ved bruk av GitHub, og vil ta det i bruk.
+              </p>
+              <br></br>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                Entitetene/oppgavene i DevOps miljøet vil bli utformet på Sprint-planning møter med den samlede gruppen, og underveis i sprintene ved behov.
+              </p>
+              <br></br>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                Videre vil gruppen bruke backloggen kontinuelig gjennom proskjektsyklusen, med tre hovedkategorier av backlogg-entiteter: kompetansebygging/forarbeid, produktutvikling og rapportskriving/revidering. Ved bruk av disse kategoriene forsøker gruppen å dokumentere og tidsestimere alle oppgavene vi vil gjennomføre i løpet av prosjektet.
+              </p>
+              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
+            </div>
+
+            <div>
+              <h2 id='Ressursbruk' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Ressurs- og tidsbruk
+              </h2>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                Viktigheten av å styre tid understrekes av tidsbegrensningene en har i et prosjekt. Derfor er det viktig at tiden styres på en effektiv måte slik at en får best mulig resultat. I prosjektet har teamet tenkt til å benytte metoder som storypoints og planningpoker for å styre ressursene (tid + personer) i prosjektet.
+              </p>
+              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
+            </div>
+
+            <div>
+              <h2 id='Fremdrift' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Kontinuelig fremdrift
+              </h2>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                Gruppen vil forsøke på kontinuerlig fremdrift ved bruk av jevnlige statusoppdateringer på daily standups, samt en generell sterk oppfordring til å stille spørsmål. Vi ønsker også å ha møter med oppdragsgiver på en kontinuerlig basis, med formål å sikre utvikling av det ønskede produkt.
+              </p>
+              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
+            </div>
+
+            <div>
+              <h2 id='Organisering' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Organisering og fordeling av arbeidsoppgaver
+              </h2>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                Fordeling av ansvarsområder for hver gruppemedlem for å kunne effektivt ha oversikt over hva folk jobber på en strukturert måte. I tillegg til å ha daglige statusmøter for hver av gruppemedlemmene, oppdaterer resten av gruppen om framdriften, for å kunne sørge for at alle holder seg på rett spor. Bruk av prosjektverktøy for å tildele oppgaver og følge fremdriften av oppgavene.
+              </p>
+              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
+            </div>
+
+            <div>
+              <h2 id='Kvalitetsikring' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Kvalitetssikring
+              </h2>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                <strong>Gruppe 3</strong> er et team på fem dedikerte IT-studenter med en gjennomtenkt gruppesammensetning. Teamet består av to frontend-utviklere (Jonas og Martin), to backend-utviklere (Ruben og Sander), og en fullstack-utvikler (Johannes) som også er prosjektleder.
+              </p>
+              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
+            </div>
+
+            <div>
+              <h2 id='Kompetanseheving' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Kompetanseheving
+              </h2>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                Hvis et team skal jobbe med et prosjekt er det viktig at medlemmene har arbeidet med noe av teknologiene og metodene som skal bli brukt i prosjektet. I perioden før bachelorprosjektet er teamet derfor motivert for å sette oss inn i teknologier for å øke kompetansen til prosjektet.
+              </p>
+              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
+            </div>
+
+            <div> {/*Legg in klatrebildet*/}
+              <h2 id='Teambuilding' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Teambuilding
+              </h2>
+              <p className='text-gray-800 dark:text-white leading-8'>
+                <strong>Gruppe 3</strong> er et team på fem dedikerte IT-studenter med en gjennomtenkt gruppesammensetning. Teamet består av to frontend-utviklere (Jonas og Martin), to backend-utviklere (Ruben og Sander), og en fullstack-utvikler (Johannes) som også er prosjektleder.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </section>
 
 
