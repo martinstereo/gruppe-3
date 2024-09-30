@@ -213,8 +213,9 @@ return (
                     Interesseområder:
                   </p>
                   <ul className='pl-5 list-disc'>
-                    <li className='py-1'>Frontend-utvikling:</li>
-                    <li className='py-1'>Backend-utvikling:</li>
+                    <li className='py-1'>Frontend-utvikling: HTML, CSS, JavaScript</li>
+                    <li className='py-1'>Backend-utvikling: C#, Python</li>
+                    <li className='py-1'>Annet: AI, Cybersikkerhet, Tjenestedesign</li>
                   </ul>
                 
                 </div>
