@@ -109,7 +109,7 @@ return (
                   <ul className='pl-5 list-disc'>
                     <li className='py-1'>Frontend-utvikling: React, Tailwind</li>
                     <li className='py-1'>Backend-utvikling: C#, Python</li>
-                    <li className='py-1'>Annet: KI, Cybersikkerhet, Linux, Docker og Kubernetes, API, Ledelse</li>
+                    <li className='py-1'>Annet: KI, Cybersikkerhet, Linux, Docker, API, Ledelse</li>
                   </ul>
                 
                 </div>
@@ -324,14 +324,13 @@ return (
                   <ul className='pl-5 list-disc'>
                     <li className='py-1'>Frontend-utvikling: JavaScript, TypeScript, React</li>
                     <li className='py-1'>Backend-utvikling: Python, C#</li>
-                    <li className='py-1'>Annet: Geografisk Informasjonssystem, AI, Databasehåndtering</li>
+                    <li className='py-1'>Annet: Geografisk Informasjonssystem, KI, Databasehåndtering</li>
                   </ul>
                 
                 </div>
               </div>
             </div>
           </div>
-          
 
         </div>
       </section>
@@ -351,82 +350,40 @@ return (
           <div>
             {/* Descriptive Text */}
             <div>
-              <h2 id='Arbeidsoppgaver' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
-                Arbeidsoppgaver og backlogg
+              <h2 id='MerOmTeamet' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Mer om Teamet
               </h2>
               <p className='text-gray-800 dark:text-white leading-8'>
-                Gruppen er svært tilpasslig av DevOps verktøy i prosjektet for å sikre ideel overgang ved produktets leveranse. Ved valgfritt DevOps verktøy har gruppen mest kompetanse ved bruk av GitHub, og vil ta det i bruk.
-              </p>
-              <br></br>
-              <p className='text-gray-800 dark:text-white leading-8'>
-                Entitetene/oppgavene i DevOps miljøet vil bli utformet på Sprint-planning møter med den samlede gruppen, og underveis i sprintene ved behov.
-              </p>
-              <br></br>
-              <p className='text-gray-800 dark:text-white leading-8'>
-                Videre vil gruppen bruke backloggen kontinuelig gjennom proskjektsyklusen, med tre hovedkategorier av backlogg-entiteter: kompetansebygging/forarbeid, produktutvikling og rapportskriving/revidering. Ved bruk av disse kategoriene forsøker gruppen å dokumentere og tidsestimere alle oppgavene vi vil gjennomføre i løpet av prosjektet.
+                Alle teammedlemmene i bachelorgruppen har høye forventninger til hverandres gjennomføring av oppgavene og utfordringene vi står ovenfor. Samt har teamet høy tillit til hverandres ferdigheter, kunnskap og arbeidsmoral. Videre har det vært et stort fokus på å danne et team som er komfortable med sine egne ferdigheter, og som med disse ferdighetene kan bidra til arbeidet. Teamet er dannet på et grunnlag av tillit og respekt, hvor mye tid og energi er lagt inn i samarbeidet. Åpen dialog er viktig i vårt samarbeid, og vi ønsker et miljø der ideer og tanker kan deles fritt uten frykt for latterligjørelse.
               </p>
               <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
             </div>
 
             <div>
-              <h2 id='Ressursbruk' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
-                Ressurs- og tidsbruk
+              <h2 id='Prosjekt/bedrift' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Tanker om prosjekt/bedrift
               </h2>
               <p className='text-gray-800 dark:text-white leading-8'>
-                Viktigheten av å styre tid understrekes av tidsbegrensningene en har i et prosjekt. Derfor er det viktig at tiden styres på en effektiv måte slik at en får best mulig resultat. I prosjektet har teamet tenkt til å benytte metoder som storypoints og planningpoker for å styre ressursene (tid + personer) i prosjektet.
+                Teamet har gjennom studiet erfart ulike typer prosjekter, blant annet UX retter prosjekter, programmerings prosjekter, tjenestedesign prosjekter og mer helhetlige prosjekter. Basert på disse erfaringene ønsker teamet å samarbeide med en bedrift som kan tilby en helhetlig utviklingserfaring. Teamet ønsker å utvikle en bred kompetanse som både er fremtidsrettet og spennende.
               </p>
               <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
             </div>
 
             <div>
-              <h2 id='Fremdrift' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
-                Kontinuelig fremdrift
+              <h2 id='Arbeidsprosessen' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
+                Arbeidsprosessen
               </h2>
               <p className='text-gray-800 dark:text-white leading-8'>
-                Gruppen vil forsøke på kontinuerlig fremdrift ved bruk av jevnlige statusoppdateringer på daily standups, samt en generell sterk oppfordring til å stille spørsmål. Vi ønsker også å ha møter med oppdragsgiver på en kontinuerlig basis, med formål å sikre utvikling av det ønskede produkt.
+                Teamet har et stort fokus på kontinuerlig kompetanseheving og fremdrift i prosjektet. For å sikre jevn progresjon vil teamet ha statusoppdateringer på daily standups. Teamet ønsker samt å ha jevnlige møter med oppdragsgiver for å sikre at produktutviklingen går i tråd med deres forventninger.
               </p>
               <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
-            </div>
-
-            <div>
-              <h2 id='Organisering' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
-                Organisering og fordeling av arbeidsoppgaver
-              </h2>
-              <p className='text-gray-800 dark:text-white leading-8'>
-                Fordeling av ansvarsområder for hver gruppemedlem for å kunne effektivt ha oversikt over hva folk jobber på en strukturert måte. I tillegg til å ha daglige statusmøter for hver av gruppemedlemmene, oppdaterer resten av gruppen om framdriften, for å kunne sørge for at alle holder seg på rett spor. Bruk av prosjektverktøy for å tildele oppgaver og følge fremdriften av oppgavene.
-              </p>
-              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
-            </div>
-
-            <div>
-              <h2 id='Kvalitetsikring' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
-                Kvalitetssikring
-              </h2>
-              <p className='text-gray-800 dark:text-white leading-8'>
-                <strong>Gruppe 3</strong> er et team på fem dedikerte IT-studenter med en gjennomtenkt gruppesammensetning. Teamet består av to frontend-utviklere (Jonas og Martin), to backend-utviklere (Ruben og Sander), og en fullstack-utvikler (Johannes) som også er prosjektleder.
-              </p>
-              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
-            </div>
-
-            <div>
-              <h2 id='Kompetanseheving' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
-                Kompetanseheving
-              </h2>
-              <p className='text-gray-800 dark:text-white leading-8'>
-                Hvis et team skal jobbe med et prosjekt er det viktig at medlemmene har arbeidet med noe av teknologiene og metodene som skal bli brukt i prosjektet. I perioden før bachelorprosjektet er teamet derfor motivert for å sette oss inn i teknologier for å øke kompetansen til prosjektet.
-              </p>
-              <hr className="h-px my-8 border-0 bg-gray-200 dark:bg-gray-700" />
-            </div>
-
-            <div> {/*Legg in klatrebildet*/}
-              <h2 id='Teambuilding' className='text-gray-800 dark:text-white text-left text-2xl font-inter pb-3'>
-                Teambuilding
-              </h2>
-              <p className='text-gray-800 dark:text-white leading-8'>
-                <strong>Gruppe 3</strong> er et team på fem dedikerte IT-studenter med en gjennomtenkt gruppesammensetning. Teamet består av to frontend-utviklere (Jonas og Martin), to backend-utviklere (Ruben og Sander), og en fullstack-utvikler (Johannes) som også er prosjektleder.
-              </p>
             </div>
           </div>
+        </div>
+
+        {/* Image Container (Centered) */}
+        <div className='flex justify-center'>
+          <Image src="/gruppebilde.jpg" priority={true} alt="GruppebildeKlatring" width={900} height={450} unoptimized className='h-auto rounded-sm'/>
         </div>
 
       </section>
