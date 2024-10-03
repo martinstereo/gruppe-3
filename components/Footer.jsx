@@ -5,11 +5,14 @@ import {AiFillLinkedin} from "react-icons/ai";
 
 const Footer = () => {
     return (
-        <footer id='kontakt_oss' className="bg-white dark:bg-slate-950 text-gray-800 dark:text-gray-300 mt-10 pb-6">
-        {/* grey line */}
-        <hr className="h-px border-0 bg-gray-200 dark:bg-gray-700" />
+        <footer id='kontakt_oss' className="bg-white dark:bg-slate-950 text-gray-800 dark:text-gray-300 mt-5 pb-6">
+
         <div className="container mx-auto px-4 lg:px-8 text-center pt-8 space-y-6 pb-10">
-            <h2 className="text-xl font-semibold">Kontakt oss</h2>
+            <h1 id='ProskjektArbeid' className='text-gray-800 dark:text-white text-center text-4xl font-extralight py-1'>
+                Kontakt Oss
+            </h1>
+            {/*strek*/}
+            <hr className="h-px my-10 border-0 bg-gray-200 dark:bg-gray-700" />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-0 w-auto px-10">
                 {/* E-post Section */}

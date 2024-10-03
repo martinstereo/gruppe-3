@@ -66,7 +66,7 @@ const Navbar = () => {
                     }
                 </button>
                 <div className='text-3xl flex justify-center lg:justify-start text-gray-700 dark:text-gray-400'>
-                <a href="https://github.com/IS-304-Bachelor" target='_blank' rel='noopener noreferrer' className='hover:text-gray-900 dark:hover:text-gray-200 transition-colors'>
+                <a href="https://github.com/martinstereo/gruppe-3" target='_blank' rel='noopener noreferrer' className='hover:text-gray-900 dark:hover:text-gray-200 transition-colors'>
                     <AiFillGithub/>
                 </a>
                 </div>
